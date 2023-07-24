@@ -1,0 +1,61 @@
+{
+  // Modules configuration
+  "clock": {
+    "format": "<span color=\"#89b4fa\"> </span>{:%I:%M %p}",
+    "format-alt": "<span color=\"#a6e3a1\"> </span>{:%A, %B %d}",
+    "interval": 1
+  },
+
+  "cpu": {
+    "format": "<span color=\"#a6e3a1\"> </span>{}%",
+    "interval": 2
+  },
+
+  "memory": {
+    "format": "<span color=\"#f9e2af\"> </span>{used}GiB",
+    "interval": 2
+  },
+
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format": "<span color=\"#cba6f7\"> </span>{temperatureC}°C",
+    "format-critical": "<span color=\"#f38ba8\"> </span>{temperatureC}°C",
+    "interval": 2
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5, // %, can be a float
+    "format": "<span color=\"#89dceb\">{icon} </span>{volume}%",
+    "format-muted": "<span color=\"#6c7086\"> </span>Muted",
+    "format-icons": ["", "", ""],
+    "on-click": "pavucontrol"
+  },
+
+  "hyprland/window": {
+    "max-length": 48
+  },
+
+  "custom/kernel": {
+    "exec": "uname -r | cut -d '-' -f1",
+    "interval": "once",
+    "format": "<span color=\"#11111b\"> </span>{}"
+  },
+
+  "custom/pacman": {
+    "exec": "$XDG_CONFIG_HOME/waybar/scripts/package-updates.sh",
+    "format": "<span color=\"#11111b\"> </span>{}",
+    "interval": 600,
+    "signal": 1
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+
+  "wlr/workspaces": {
+    "disable-scroll": true,
+    "on-click": "activate"
+  }
+}

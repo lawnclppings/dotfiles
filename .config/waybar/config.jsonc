@@ -1,0 +1,18 @@
+[
+  {
+    "layer": "top", // Waybar on highest layer so tooltips go over windows
+    "height": 36, // Set height to avoid jumping due to active workspace indicator
+    
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+
+    "modules-left": ["wlr/workspaces", "hyprland/window", "custom/pacman"], // Sets modules for the left of the bar
+    "modules-center": ["clock"], // Set modules for the center of the bar
+    "modules-right": ["temperature", "cpu", "memory", "pulseaudio"], // Set modules for the right of the bar
+
+    "include": ["~/.config/waybar/modules.jsonc"] // Include the module config
+  }
+]
+
+

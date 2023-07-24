@@ -1,0 +1,47 @@
+@import "mocha.css";
+
+* {  
+	color: @text;
+	font-family: 'JetBrainsMono NF';
+	font-size: 13px;
+	font-weight: bold;
+	min-height: 5px;
+  }
+
+  window#waybar {
+	  background-color: @base;
+	  opacity: 0.95;
+	  border-radius: 10px;
+	  border: 2px solid @blue;
+  }
+
+
+#workspaces,
+#clock,
+#temperature,
+#cpu,
+#memory,
+#pulseaudio,
+#tray {
+
+	  padding: 0 5px;
+
+	}
+
+	#window.empty {
+	  background: rgba(0, 0, 0, 0);
+	  }
+	#window {
+	color: @text;
+	margin: 4px;
+	}
+	#pulseaudio {
+		margin-right: 4px;
+	 }
+	 #temperature {
+	  margin-left: 3px;
+		  }
+	
+	  #clock {
+	font-size: 14px;
+	  }
