@@ -8,6 +8,7 @@
 - **Terminal:** Kitty
 - **Shell:** Zsh
 - **Notification Daemon:** Dunst
+- **Font:** JetBrainsMono Nerd Font
 - **Theme:** Catppuccin
 
 # **Installation:**
