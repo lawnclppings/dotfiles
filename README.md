@@ -1,7 +1,5 @@
 # Lawnclpping's Dotfiles
-![alt text](https://github.com/lawnclppings/dotfiles/blob/008a3269530ba5771b870f91fe84aa2f334cdf38/assets/desktop-1.png)
-![alt text](https://github.com/lawnclppings/dotfiles/blob/008a3269530ba5771b870f91fe84aa2f334cdf38/assets/desktop-2.png)
-![alt text](https://github.com/lawnclppings/dotfiles/blob/008a3269530ba5771b870f91fe84aa2f334cdf38/assets/desktop-3.png)
+![alt text](https://github.com/lawnclppings/dotfiles/blob/b7a83ac64068db60c6de959fd86ae5d4e5aaf7a3/assets/desktop.png)
 
 - **Window Manager:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Wallpaper Utility:** [Hyprpaper](https://github.com/hyprwm/hyprpaper)
