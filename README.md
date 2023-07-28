@@ -1,5 +1,4 @@
 # Lawnclpping's Dotfiles
-![alt text](https://github.com/lawnclppings/dotfiles/blob/15192f26916b879365a8f90446c764b481afa20c/assets/desktop.png)
 
 - **Window Manager:** Hyprland
 - **Wallpaper Utility:** Hyprpaper
