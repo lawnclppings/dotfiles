@@ -11,7 +11,7 @@
   window#waybar {
 	  background-color: @base;
 	  opacity: 0.95;
-	  border-radius: 10px;
+	  border-radius: 12px;
 	  border: 2px solid @blue;
   }
 
