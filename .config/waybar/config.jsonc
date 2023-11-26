@@ -1,5 +1,4 @@
-[
-  {
+{
     "layer": "top", // Waybar on highest layer so tooltips go over windows
     "height": 36, // Set height to avoid jumping due to active workspace indicator
     
@@ -9,10 +8,95 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"], // Sets modules for the left of the bar
     "modules-center": ["clock"], // Set modules for the center of the bar
-    "modules-right": ["temperature", "cpu", "memory", "pulseaudio"], // Set modules for the right of the bar
+    "modules-right": ["network", "temperature", "cpu", "memory", "pulseaudio"], // Set modules for the right of the bar
 
-    "include": ["~/.config/waybar/modules.jsonc"] // Include the module config
-  }
-]
+      // Modules configuration
+  "clock": {
+    "format": "<span color=\"#89b4fa\"> </span>{:%I:%M %p}",
+    "format-alt": "<span color=\"#a6e3a1\"> </span>{:%A, %B %d}",
+    "interval": 1
+  },
 
+  "cpu": {
+    "format": "<span color=\"#89b4fa\"> </span>{}%",
+    "interval": 2
+  },
 
+  "memory": {
+    "format": "<span color=\"#f9e2af\"> </span>{}%",
+    "format-alt": "<span color=\"#f9e2af\"> </span>{used}/{total} GiB",
+    "interval": 5
+  },
+
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format": "<span color=\"#cba6f7\"> </span>{temperatureC}°C",
+    "format-critical": "<span color=\"#f38ba8\"> </span>{temperatureC}°C",
+    "interval": 2
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5, // %, can be a float
+    "format": "<span color=\"#89dceb\">{icon} </span>{volume}%",
+    "format-muted": "<span color=\"#7f849c\">  </span>Muted",
+        "format-icons": {
+            "phone": " ",
+            "portable": " ",
+            "default": ["", " ", " "]
+        },
+    "on-click": "pavucontrol"
+  },
+  "hyprland/window": {
+	"format": "{class}",
+    "max-length": 48
+  },
+
+  "custom/kernel": {
+    "exec": "uname -r | cut -d '-' -f1",
+    "interval": "once",
+    "format": "<span color=\"#11111b\"> </span>{}"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+
+      "network": {
+      "interface": "wlan0",
+      "format": "{ifname}",
+      "format-wifi": "<span color=\"#a6e3a1\">  </span>{essid}",
+      "format-ethernet": "<span color='#a6e3a1'>  </span>{ipaddr}/{cidr}",
+      "format-disconnected": "<span color=\"#f38ba8\">󰖪  </span>No Network",
+      "tooltip": false
+    },
+
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "disable-scroll": true,
+    "sort-by-number": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+             "urgent": "<span color=\"#f38ba8\"> </span>",
+             "active": "<span color=\"#89b4fa\"> </span>",
+             "default": "<span color=\"#9399b2\">󰧞</span>"
+    },
+    //for laptop
+   "battery": {
+	"states": {
+        	"warning": 30,
+        	"critical": 15
+    },
+    "bat": "BAT2",
+    "interval": 60,
+      "format": "<span color='#a6e3a1'>{icon}</span> {capacity}%",
+      "format-warning": "<span color='#fab387'>{icon}</span> {capacity}%",
+      "format-critical": "<span color='#f38ba8'>{icon}</span> {capacity}%",
+      "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+      "format-charging": "<span color='#a6e3a1'></span> {capacity}%",
+      "tooltip": false
+    }
+  } 
+}
