@@ -38,8 +38,8 @@
 
   "pulseaudio": {
     "scroll-step": 5, // %, can be a float
-    "format": "<span color=\"#89dceb\">{icon} </span>{volume}%",
-    "format-muted": "<span color=\"#7f849c\">  </span>Muted",
+    "format": "<span color=\"#89dceb\">{icon}</span>{volume}%",
+    "format-muted": "<span color=\"#7f849c\"> </span>Muted",
         "format-icons": {
             "phone": " ",
             "portable": " ",
@@ -82,21 +82,6 @@
              "urgent": "<span color=\"#f38ba8\"> </span>",
              "active": "<span color=\"#89b4fa\"> </span>",
              "default": "<span color=\"#9399b2\">󰧞</span>"
-    },
-    //for laptop
-   "battery": {
-	"states": {
-        	"warning": 30,
-        	"critical": 15
-    },
-    "bat": "BAT2",
-    "interval": 60,
-      "format": "<span color='#a6e3a1'>{icon}</span> {capacity}%",
-      "format-warning": "<span color='#fab387'>{icon}</span> {capacity}%",
-      "format-critical": "<span color='#f38ba8'>{icon}</span> {capacity}%",
-      "format-icons": ["", "", "", "", "", "", "", "", "", ""],
-      "format-charging": "<span color='#a6e3a1'></span> {capacity}%",
-      "tooltip": false
     }
   } 
 }
