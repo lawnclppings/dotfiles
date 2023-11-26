@@ -50,3 +50,9 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 1351, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+26/07/23 (20:19:20) | ERROR: Exception when sending signal 9 to pid 454
+26/07/23 (20:19:20) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5479, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted

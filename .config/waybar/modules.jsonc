@@ -42,20 +42,17 @@
     "format": "<span color=\"#11111b\"> </span>{}"
   },
 
-  "custom/pacman": {
-    "exec": "$XDG_CONFIG_HOME/waybar/scripts/package-updates.sh",
-    "format": "<span color=\"#11111b\"> </span>{}",
-    "interval": 600,
-    "signal": 1
-  },
-
   "tray": {
     "icon-size": 18,
     "spacing": 8
   },
 
-  "wlr/workspaces": {
-    "disable-scroll": true,
-    "on-click": "activate"
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "sort-by-number": true
   }
 }
