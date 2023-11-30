@@ -2,9 +2,9 @@
     "layer": "top", // Waybar on highest layer so tooltips go over windows
     "height": 36, // Set height to avoid jumping due to active workspace indicator
     
-    "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
+    "margin-top": 8,
+    "margin-left": 11,
+    "margin-right": 11,
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"], // Sets modules for the left of the bar
     "modules-center": ["clock"], // Set modules for the center of the bar
