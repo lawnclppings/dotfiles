@@ -3,6 +3,7 @@
 
 - **Window Manager:** [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Wallpaper Utility:** [Hyprpaper](https://github.com/hyprwm/hyprpaper)
+- **Lockscreen:** [Hyprlock](https://github.com/hyprwm/hyprlock)
 - **Top bar:** [Waybar](https://github.com/Alexays/Waybar)
 - **Application launcher:** [Rofi Wayland Fork](https://github.com/lbonn/rofi)
 - **Terminal:** [Kitty](https://github.com/kovidgoyal/kitty)
