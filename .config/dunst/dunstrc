@@ -7,7 +7,7 @@ frame_width=2
 corner_radius=10
 origin = top-right
 offset = 10x10
-transparency = 95
+transparency = 0.9
 
 [urgency_low]
 background = "#1E1E2E"

@@ -5,16 +5,22 @@
 	font-family: 'JetBrainsMono NF';
 	font-size: 13px;
 	font-weight: bold;
-	min-height: 5px;
+	border: none;
+  	border-radius: 0;
   }
 
-  window#waybar {
-	  background-color: @base;
-	  opacity: 0.95;
-	  border-radius: 12px;
-	  border: 2px solid @blue;
-  }
-
+ #waybar {
+    background-color: transparent;
+}
+ 
+#waybar > box {
+    border-radius: 12px;
+    border: 2px solid @blue;
+    background-color: alpha(@mantle, 0.85); 
+   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);*/
+    transition-property: background-color;
+    transition-duration: .5s;
+}
 
 #workspaces,
 #clock,
@@ -24,24 +30,24 @@
 #pulseaudio,
 #tray {
 
-	  padding: 0 5px;
+	  padding: 0 4px;
 
 	}
-
-	#window.empty {
-	  background: rgba(0, 0, 0, 0);
-	  }
-	#window {
+#window {
 	color: @text;
-	margin: 4px;
-	}
-	#pulseaudio {
+}
+#pulseaudio {
 		margin-right: 4px;
-	 }
-	 #temperature {
-	  margin-left: 3px;
-		  }
+}
+#temperature {
+	margin-left: 3px;
+	  }
 	
-	  #clock {
+  #clock {
 	font-size: 14px;
 	  }
+	  #workspaces{
+	  	margin-left: 3px;
+	  }
+
+

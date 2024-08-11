@@ -64,13 +64,14 @@
   },
 
       "network": {
-      "interface": "wlan0",
+//      "interface": "wlan0",
       "format": "{ifname}",
       "format-wifi": "<span color=\"#a6e3a1\">  </span>{essid}",
-      "format-ethernet": "<span color='#a6e3a1'>  </span>{ipaddr}/{cidr}",
+      "format-ethernet": "<span color='#a6e3a1'>  </span>{ipaddr}/{cidr}",
       "format-disconnected": "<span color=\"#f38ba8\">󰖪  </span>No Network",
-      "tooltip": false
-    },
+      // "tooltip": false,
+	"max-length": 50 
+},
 
   "hyprland/workspaces": {
     "all-outputs": true,
