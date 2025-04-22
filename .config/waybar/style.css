@@ -8,6 +8,7 @@
 	min-height: 5px;
   }
 
+
   window#waybar {
 	  background-color: @base;
 	  opacity: 0.95;
@@ -33,15 +34,25 @@
 	  }
 	#window {
 	color: @text;
-	margin: 4px;
 	}
 	#pulseaudio {
 		margin-right: 4px;
 	 }
 	 #temperature {
-	  margin-left: 3px;
+	  margin-left: 2px;
 		  }
 	
 	  #clock {
 	font-size: 14px;
 	  }
+
+	  #workspaces{
+	  	margin-left: 2px;
+	  }
+
+
+#workspaces button {
+  margin: 4px 0;
+  padding: 0 4px;
+  color: @base;
+}
