@@ -5,7 +5,8 @@
 	font-family: 'JetBrainsMono NF';
 	font-size: 13px;
 	font-weight: bold;
-	min-height: 5px;
+	border: none;
+  	border-radius: 0;
   }
 
 
@@ -16,7 +17,6 @@
 	  border: 2px solid @blue;
   }
 
-
 #workspaces,
 #clock,
 #temperature,
@@ -25,14 +25,10 @@
 #pulseaudio,
 #tray {
 
-	  padding: 0 5px;
+	  padding: 0 4px;
 
 	}
-
-	#window.empty {
-	  background: rgba(0, 0, 0, 0);
-	  }
-	#window {
+#window {
 	color: @text;
 	}
 	#pulseaudio {
@@ -42,7 +38,7 @@
 	  margin-left: 2px;
 		  }
 	
-	  #clock {
+  #clock {
 	font-size: 14px;
 	  }
 

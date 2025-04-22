@@ -65,6 +65,7 @@
 
       "network": {
 //      "interface": "wlan0",
+//      "interface": "wlan0",
       "format": "{ifname}",
       "format-wifi": "<span color=\"#a6e3a1\">󰖩  </span>{essid}",
       "format-ethernet": "<span color='#a6e3a1'>󰈀  </span>{ipaddr}/{cidr}",
